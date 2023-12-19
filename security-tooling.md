@@ -24,7 +24,7 @@ By adhering to these guidelines, developers can efficiently integrate GitHub act
 
 ## Security Tool Workflows
 
-In the context of our emphasized guidelines for security tooling with GitHub actions, we highly recommend the utilization of the following tools: **Trivy, KICS, CodeQL, Dependabot,** and **GitGuardian**. The subsequent sections will introduce and detail the usage of each of these tools.
+In the context of our emphasized guidelines for security tooling with GitHub actions, we highly recommend the utilization of the following tools: **Trivy, KICS, CodeQL, Dependabot, OWASP ZAP** and **GitGuardian**. The subsequent sections will introduce and detail the usage of each of these tools.
 
 All of these tools are free for public GitHub repositories, and no key is required.
 
@@ -93,6 +93,56 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: kicsResults/results.sarif
+```
+
+### OWASP ZAP
+
+The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository. 
+
+**WARNING- this action will perform attacks on the target website. You should only scan targets that you have permission to test.**
+**Required: The URL of the web application to be scanned at line number: 26**
+
+Here's a concise breakdown of the OWASP ZAP integration in our workflow:
+- The ZAP scan is initiated either on-demand through manual dispatch or based on a CRON schedule, executing once daily. The job is executed on the latest Ubuntu. Upon initiation, the repository is checked out using the `actions/checkout@v3 action`.
+  
+- The primary action involves running the ZAP scan, which leverages the `zaproxy/action-full-scan@v0.8.0` through the `zap2docker-stable` Docker image. The Zap action-full-scan utilizes a GitHub token from the repository's secrets to authenticate and authorize the scan with GitHub.
+  
+- After the scan, results are then uploaded to the GitHub Issues tab as **ZAP Full Scan Report**.
+
+- Click on the hyperlink as shown below of your scan and open zap_scan. This will download the complete report in your host PC.
+
+![zap_scan report hyperlink](assets/zap_scan1.png)
+
+![zap_scan report download](assets/zap_scan2.png)
+
+
+  ```yml
+name: ZAP
+on:
+  push:
+    branches: main
+    paths-ignore:
+      - "**/*.md"
+      - "**/*.txt"
+  schedule:
+    - cron: "0 0 * * *" # Once a day
+  workflow_dispatch:
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: OWASP ZAP
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: main
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.8.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: 'www.targeturl.com'
 ```
 
 ### Trivy
