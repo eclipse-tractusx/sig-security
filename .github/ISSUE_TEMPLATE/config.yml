@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask the community for help
+    url: https://github.com/RoKrish14/sig-security/discussions/categories/q-a
+    about: Ask questions and discuss with other community members
