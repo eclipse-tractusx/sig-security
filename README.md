@@ -31,3 +31,4 @@ For certain security-related issues and pull requests, such as Security Code Rev
 ## Reporting a Security Issue
 
 Please follow the [Security Issue Reporting Guidelines](https://eclipse-tractusx.github.io/docs/release/trg-7/trg-7-01#security-file) if you come across any security vulnerabilities or concerns.
+
