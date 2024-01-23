@@ -1,0 +1,28 @@
+labels: ["triage/support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        #### Note
+        If you have any troubles/questions, feel free to ask.
+        Please ensure that you're not asking a duplicate question by searching the [issues](https://github.com/RoKrish14/sig-security/issues) beforehand.
+  - type: dropdown
+    attributes:
+      label: Scanner
+      description: Which scanner are you using?
+      options:
+        - Veracode
+        - Invicti
+        - Trivy
+        - KICKS
+        - Snyk
+        - CodeQL
+        - Dependabot
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Question
+      description: What kind of problem are you facing? Or, what questions do you have? Please include version number for specificty.
+    validations:
+      required: true
