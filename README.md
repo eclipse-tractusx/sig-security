@@ -15,19 +15,6 @@ This is the Special Interest Group for Security (SIG-Security) within the Eclips
 
 For certain security-related issues and pull requests, you may create new [Issues](https://github.com/eclipse-tractusx/sig-security/issues) and/or [Discussions](https://github.com/eclipse-tractusx/sig-security/discussions).
 
-## Contact
-
-| Assignment    | GitHub-Handle        |
-| ------------- |:-------------:|
-| Lead | @guenterban |
-| Security Tools, docs | @szafrugr |
-| Security Tools | @RoKrish14      |
-| Security Tools | @DnlZF      |
-| Security Tools, docs | @ZFLokesh |
-| Security Tools | @PiotrStys |
-| Security Tools, docs | @Gitleena |
-| Security Tools, docs | @klaudiaZF |
-
 ## How to Get Involved
 
 - **Mailing List**: [Subscribe](https://accounts.eclipse.org/mailing-list/tractusx-dev) to stay updated.
