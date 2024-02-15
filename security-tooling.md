@@ -89,7 +89,7 @@ For configuration within GitHub, refer to the appended image illustrating the se
 
 Notably, highlighted buttons should visibly show _"Disable"_ to ensure correct configuration. Additionally, while the lowest button should also be disabled (not applicable in this example repo due to the absence of code), **enabling it allows the specification of a Dependabot config that aligns with the repo setup, addressing the declaration of registries to be scanned for dependencies.** Click _"Enable"_ to open a basic `dependabot.yml` configuration file in the `.github` directory of your repository.
 
-- The relevant action worksflow script, demonstrating configurations for `maven` `github-actions`, `docker` and `npm` dependencies, can be found [here](.github/actions/dependabot /dependabot.yml).
+- The relevant action worksflow script, demonstrating configurations for `maven` `github-actions`, `docker` and `npm` dependencies, can be found [here](.github/actions/dependabot/dependabot.yml).
 
 _Dependabot, while effective, is not without its limitations._ In certain scenarios, it may inadequately assess some dependencies. To ensure a more comprehensive scan, other tools like the OWASP Dependency Scan or Google OSV Scanner can be considered. However, a point of caution: integrating these tools into your workflow can be more intricate compared to Dependabot.
 
