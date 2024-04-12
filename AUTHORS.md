@@ -13,6 +13,5 @@ The following people (in alphabetical order) have [contributed to this repositor
 * Kowalczyk , Szymon, ZF Group, [@szymonkowalczykzf](https://github.com/szymonkowalczykzf)
 * Krishnamurthy, Rohan, ZF Group, [@RoKrish14](https://github.com/RoKrish14)
 * Pasenko, Pasenko, ZF Group, [@DnlZF](https://github.com/DnlZF)
-* Scherer, Sebastian, [@scherersebastian](https://github.com/scherersebastian)
 * Szafruga, Rafal, ZF Group, [@szafrugr](https://github.com/szafrugr)
 * Theissen, Pablo, Telekom Security, [@pablosec](https://github.com/pablosec)
