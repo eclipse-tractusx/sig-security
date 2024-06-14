@@ -38,7 +38,6 @@ more.
 
 The project maintains the following source code repositories
 
-* https://github.com/eclipse-tractusx
 * https://github.com/eclipse-tractusx/sig-security
 
 ## Eclipse Development Process
