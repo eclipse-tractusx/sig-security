@@ -14,4 +14,3 @@ The following people (in alphabetical order) have [contributed to this repositor
 * Krishnamurthy, Rohan, ZF Group, [@RoKrish14](https://github.com/RoKrish14)
 * Pasenko, Pasenko, ZF Group, [@DnlZF](https://github.com/DnlZF)
 * Szafruga, Rafal, ZF Group, [@szafrugr](https://github.com/szafrugr)
-* Theissen, Pablo, Telekom Security, [@pablosec](https://github.com/pablosec)
