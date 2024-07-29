@@ -31,12 +31,6 @@ otherwise [create a new discussion](https://github.com/eclipse-tractusx/sig-secu
 🙋 **Assign to yourself** - Show others that you are working on this issue by assigning it to yourself.
 <br>To do so, click the cog wheel next to the Assignees section just to the right of this issue.
 
-## Security - Office Hour
-
-Every 2 weeks on Thursday effective 15. Feb 2024 until 31. Dec 2024 from 08:35 am to 09:30 am CET
-- [**Security Open meeting**](https://eclipse-tractusx.github.io/community/open-meetings/)
-- [**Security Meeting Minutes**](https://eclipse-tractusx.github.io/community/meeting-minutes/)
-
 ## Reporting a Security Issue
 
 Please follow the [Security Issue Reporting Guidelines](https://eclipse-tractusx.github.io/docs/release/trg-7/trg-7-01#security-file) if you come across any security vulnerabilities or concerns.
