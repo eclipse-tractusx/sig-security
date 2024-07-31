@@ -15,6 +15,7 @@ assignees: 'RoKrish14'
 - [ ] CodeQL
 - [ ] KICS
 - [ ] GitGuardian
+- [ ] TruffleHog
 - [ ] Trivy
 
 ### Issue Description
