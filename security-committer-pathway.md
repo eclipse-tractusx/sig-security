@@ -18,7 +18,7 @@ This guide, lays out a structured path for new members in Eclipse Tractus-X to c
 
 - Conduct security code reviews in Pull Requests (PRs), engaging in discussions to enhance security aspects.
 
-- Independently create PRs and issues for [security assessments](https://github.com/eclipse-tractusx/sig-security/blob/main/security-assessment.md) and threat modeling, actively contributing to their resolution.
+- Independently create PRs and actively contributing to their resolution.
 
 - Contribute to the development and integration of [security tooling](https://github.com/eclipse-tractusx/sig-security/blob/main/security-tooling.md) in the CI/CD process through PRs and participating in related discussions.
 
